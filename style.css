@@ -1,0 +1,104 @@
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  background: #FFD1D1 ;
+  font-size: 45px;
+  color: #FF9494  ;
+  font-weight: 500;
+  font-family: 'Shantell Sans'  ;
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+.compliments {
+  margin: auto;
+  min-height: 500px;
+  min-width: 600px;
+  padding: 100px 300px;
+  border-radius: 35px;
+
+  background-color: #FFE3E1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 70px;
+}
+.compliments__header {
+  font-size: 70px;
+  font-weight: bold;
+  cursor: default;
+  transition: .3s;
+}
+
+.compliments__header:hover {
+  font-size: 75px;
+}
+
+.compliments__text {
+  font-weight: normal;
+  font-size: 50px;
+  transition: .3s;
+  cursor: default;
+
+}
+
+.compliments__text:hover {
+  font-size: 55px;
+}
+
+.compliments__button {
+  font-family: 'Shantell Sans';
+  color: #FFE3E1;
+  font-size: 50px;
+  background-color: #FF9494;
+  padding: 30px 50px;
+  border-radius: 35px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.compliments__button:hover {
+  background-color: #ff6e6e;
+  padding: 35px 55px;
+  font-size: 55px;
+
+}
