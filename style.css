@@ -62,18 +62,18 @@ body {
 
   gap: 70px;
 }
-.compliments__header {
+#compliments__header {
   font-size: 70px;
   font-weight: bold;
   cursor: default;
   transition: .3s;
 }
 
-.compliments__header:hover {
+#compliments__header:hover {
   font-size: 75px;
 }
 
-.compliments__text {
+#compliments__text {
   font-weight: normal;
   font-size: 50px;
   transition: .3s;
@@ -81,11 +81,11 @@ body {
 
 }
 
-.compliments__text:hover {
+#compliments__text:hover {
   font-size: 55px;
 }
 
-.compliments__button {
+#compliments__button {
   font-family: 'Shantell Sans';
   color: #FFE3E1;
   font-size: 50px;
@@ -96,7 +96,7 @@ body {
   cursor: pointer;
 }
 
-.compliments__button:hover {
+#compliments__button:hover {
   background-color: #ff6e6e;
   padding: 35px 55px;
   font-size: 55px;
