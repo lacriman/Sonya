@@ -49,7 +49,7 @@ body {
 
 .compliments {
   display: grid;
-  grid-template: 1fr 2fr 1fr;
+  grid-template-rows: auto auto auto; /* Rows adjust to content height */
 
   margin: auto;
   height: 80vh;
@@ -62,10 +62,11 @@ body {
   justify-content: center;
   text-align: center;
 
+
   box-shadow: rgba(255, 148, 148, 0.3) 0px 19px 38px, rgba(255, 148, 148, 0.22) 0px 15px 12px;
 }
 #compliments__header {
-  font-size: 2rem;
+  font-size: 60px;
   font-weight: bold;
   cursor: default;
   transition: .3s;
@@ -80,7 +81,8 @@ body {
 
 #compliments__text {
   font-weight: normal;
-  font-size: 1.2rem;
+  font-size: 45px;
+
   transition: .3s;
   cursor: default;
   max-width: 45rem;
@@ -95,13 +97,14 @@ body {
   position: relative;
   left: -200%;
 
-  margin: 0 auto;
+  margin: auto;
   font-family: 'Shantell Sans';
   color: #FFE3E1;
-  font-size: 1rem;
+  font-size: clamp(.8rem, 4vw, 5vw);
   background-color: #FF9494;
-  padding: .875rem 1rem;
-  width:fit-content;
+  padding: clamp(0rem, 2rem, 5vw) clamp(0rem, 2rem, 7vw);
+  width: fit-content;
+  align-items: center;
   border-radius: 35px;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
@@ -153,5 +156,23 @@ body {
 @keyframes fadeIn {
   to {
     opacity: 1;
+  }
+}
+
+/* --------- Adaptive ----------- */
+
+@media (max-width: 600px) {
+  .compliments {
+    width: 90%;
+  }
+
+  #compliments__header {
+    font-size: 40px;
+  }
+  #compliments__text {
+    font-size: 40px;
+  }
+  #compliments__button {
+    font-size: 30px;
   }
 }
