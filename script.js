@@ -1,4 +1,4 @@
-const generateButton = document.getElementById('compliments__button').addEventListener('click', generateCompliment);
+const complimentsButton = document.getElementById('compliments__button')
 let complimentText = document.getElementById('compliments__text');
 
 const compliments = [
@@ -39,11 +39,25 @@ const compliments = [
 // -------------------------------------------------------------
 
 window.addEventListener('load', () => {
-   gsap.to(compliments__button, {
+   gsap.to(complimentsButton, {
      left: '0',  // Slide it into place
      duration: 1, // Duration of the animation
    });
  });
+
+
+const animateButtonClick = () => {
+   complimentsButton.style.transition = 'transform .5s ease-out';
+   complimentsButton.style.transform = 'scale(1.2)';
+
+   setTimeout(() => {
+      complimentsButton.style.transform = ''
+   }, 100);
+}
+
+complimentsButton.addEventListener('mousedown', animateButtonClick)
+
+complimentsButton.addEventListener('click', generateCompliment);
 
 let complimentsHistory = [];
 
