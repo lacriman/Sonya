@@ -48,21 +48,21 @@ body {
 /* ---------------------------------------------------------------------------- */
 
 .compliments {
+  display: grid;
+  grid-template: 1fr 2fr 1fr;
+
   margin: auto;
   height: 80vh;
   width: 80vw;
-  padding: 5vw 10vw;
+  padding: 4vw 6vw;
   border-radius: 35px;
 
   background-color: #FFE3E1;
-  display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   text-align: center;
 
   box-shadow: rgba(255, 148, 148, 0.3) 0px 19px 38px, rgba(255, 148, 148, 0.22) 0px 15px 12px;
-  gap: 5vw;;
 }
 #compliments__header {
   font-size: 2rem;
@@ -95,11 +95,13 @@ body {
   position: relative;
   left: -200%;
 
+  margin: 0 auto;
   font-family: 'Shantell Sans';
   color: #FFE3E1;
-  font-size: 50px;
+  font-size: 1rem;
   background-color: #FF9494;
-  padding: 30px 50px;
+  padding: .875rem 1rem;
+  width:fit-content;
   border-radius: 35px;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
