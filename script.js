@@ -38,6 +38,12 @@ const compliments = [
 // }  
 // -------------------------------------------------------------
 
+window.addEventListener('load', () => {
+   gsap.to(compliments__button, {
+     left: '0',  // Slide it into place
+     duration: 1, // Duration of the animation
+   });
+ });
 
 let complimentsHistory = [];
 
@@ -61,13 +67,13 @@ function generateCompliment() {
    // --------- Animations ------------------------
    gsap.to(complimentText, {
       opacity: 1,
-      duration: .3,
+      duration: .4,
       ease: "power2.out"
    });
 
    gsap.from(complimentText, {
-      y: -80,
-      duration: .1,
+      y: -60,
+      duration: .2,
       ease: "bounce.out"
    });
 }

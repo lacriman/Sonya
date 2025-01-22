@@ -97,8 +97,11 @@ body {
   background-color: #FF9494;
   padding: 30px 50px;
   border-radius: 35px;
-  transition: .3s;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
+
+  position: relative;
+  left: -200%;
 }
 
 #compliments__button:hover {
@@ -107,10 +110,13 @@ body {
 
 }
 
+
+
 #compliments__header span {
   opacity: 0;
   animation: fadeIn 0.5s forwards;
 }
+
 
 #compliments__header span:nth-child(1) { animation-delay: 0.1s; }
 #compliments__header span:nth-child(2) { animation-delay: 0.2s; }
