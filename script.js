@@ -57,7 +57,7 @@ let complimentsHistory = [];
 
 function generateCompliment() {
    if (complimentsHistory.length === compliments.length) {
-      complimentText.innerHTML = 'с днем рождения 🎂🎉🎈🥳';
+      complimentText.innerHTML = 'с днем рождения соня 🥳🎂🎉🎈🥳🎁';
       return;
    }
    let complimentNumber;

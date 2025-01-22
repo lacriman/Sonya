@@ -50,7 +50,7 @@ body {
 .compliments {
   display: grid;
   grid-template-rows: auto auto auto;
-  row-gap: 1rem;
+  row-gap: 3rem;
   margin: auto;
   height: auto;
   width: 80vw;
@@ -165,6 +165,8 @@ body {
 @media (max-width: 600px) {
   .compliments {
     width: 90%;
+    row-gap: 1rem;
+
   }
 
   #compliments__header {
