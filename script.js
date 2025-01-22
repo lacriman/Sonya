@@ -56,10 +56,25 @@ function generateCompliment() {
    complimentsHistory.push(complimentNumber);
 
    complimentText.innerHTML = compliments[complimentNumber];
+
+
+   // --------- Animations ------------------------
+   gsap.to(complimentText, {
+      opacity: 1,
+      duration: .3,
+      ease: "power2.out"
+   });
+
+   gsap.from(complimentText, {
+      y: -80,
+      duration: .1,
+      ease: "bounce.out"
+   });
 }
 
 function resetCompliments() {
    complimentsHistory = [];
 }
 resetCompliments();
+
 
